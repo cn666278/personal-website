@@ -124,6 +124,9 @@ footer a:hover {
 footer {
     background: #222;
     color: #d3d4d6;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 .socials {
     list-style-type: none;
@@ -131,7 +134,12 @@ footer {
 }
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 .socials img {
     width: 32px;
+}
+.socials img:hover {
+    /* filter: brightness(0.8); */
+    opacity: 0.8;
 }
