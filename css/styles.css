@@ -28,7 +28,7 @@ body {
     background: #f6f6f6; 
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem; /* 16px */
+    font-size: 1.4rem; /* 14px */
     line-height: 1.4;
 }
 h1, h2, h3 {
@@ -66,6 +66,13 @@ footer a:hover {
     background: #3c8453;
     color: #f6f6f6;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: .1em;
+    line-height: 1;
+    border-radius: 16px;
 }
 
 .content-wrapper {
@@ -115,6 +122,7 @@ footer a:hover {
     position: fixed;
     top: 5px;
     left: 5px;
+    font-size: 1.3rem;
 }
 
 /* Profile
@@ -135,14 +143,29 @@ footer a:hover {
 /* Work Experience
 ------------------------------------*/
 .work-item{
+    margin: 30px 0;
     display: grid;
     grid-template-columns: 300px 1fr;
     column-gap: 20px;
 }
 
+.work-details p{
+    margin: 0;
+}
+
+.work-summary p:first-child{
+    margin-top: 0;
+}
+
 /* Education
 ------------------------------------*/
+.education-item{
+    margin: 30px 0;
+}
 
+.education-item p{
+    margin: 0;
+}
 
 /* FOOTER
 ------------------------------------*/
