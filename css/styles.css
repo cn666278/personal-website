@@ -125,20 +125,48 @@ footer a:hover {
     font-size: 1.3rem;
 }
 
-/* Profile
+/* Projects
 ------------------------------------*/
 .project-item{
-    display: flow-root;
     margin: 30px 0;
 }
 .project-item img{
     width: 300px;
-    float: left;
-    margin-right: 20px;
 }
 
-/* Projects
-------------------------------------*/
+@media screen and (min-width: 860px) { 
+    .project-item{
+        display: flow-root; /* we dont need the flow for < 860px screen */
+    }
+    .project-item img{
+        float: left; /* we dont need the float for < 860px screen */
+        margin-right: 20px;
+    }
+}
+/* only show grid for screen size between 650px to 859px */
+@media screen and (min-width: 650px) and (max-width: 859px) { /* using 859px to avoid conflict with the above media query */
+    .project-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img{ 
+        width: 100%; /* make the image full width with the container */
+    }
+}
+
+/* only show default (width:300px)(class .project-item img)
+* for screen size between 500px to 649px 
+* because the  layout is suitable for this screen size */
+
+/* show full width for screen size < 500px */
+@media screen and (max-width: 500px) { 
+    .project-item img{
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+    
+}
 
 /* Work Experience
 ------------------------------------*/
