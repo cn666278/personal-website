@@ -125,6 +125,13 @@ footer a:hover {
     font-size: 1.3rem;
 }
 
+@media screen and (max-width: 1200px) { 
+    /* todo: change the download-link style to right*/
+    .download-link {
+        position: absolute; /* we dont fixed position for < 1200px screen to avoid cover content*/
+    }
+}
+
 /* Projects
 ------------------------------------*/
 .project-item{
