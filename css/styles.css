@@ -98,7 +98,14 @@ footer a:hover {
     background: rgb(255 255 255 / 0.9);
     padding: 30px;
 }
-
+@media screen and (max-width: 650px) {
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
 
 /* RESUME
 ------------------------------------*/
@@ -226,9 +233,9 @@ footer a:hover {
 footer {
     background: #222;
     color: #d3d4d6;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+}
+footer p{
+    padding: 0 10px;
 }
 .socials {
     list-style-type: none;
@@ -244,4 +251,19 @@ footer {
 .socials img:hover {
     /* filter: brightness(0.8); */
     opacity: 0.8;
+}
+
+@media screen and (min-width: 860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+/* only show center align for screen size < 500px */
+@media screen and (max-width: 500px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }  
 }
