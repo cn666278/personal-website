@@ -179,17 +179,23 @@ footer a:hover {
 ------------------------------------*/
 .work-item{
     margin: 30px 0;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    column-gap: 20px;
 }
 
 .work-details p{
     margin: 0;
 }
 
-.work-summary p:first-child{
-    margin-top: 0;
+/* only show grid for screen size > 860px */
+@media  screen and (min-width: 860px) { 
+    .work-item{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
+    
 }
 
 /* Education
