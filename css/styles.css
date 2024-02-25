@@ -229,6 +229,20 @@ footer a:hover {
     margin: 0;
 }
 
+/* Certifications
+------------------------------------*/
+.certifications-item{
+    margin: 30px 0;
+}
+
+.certifications-item p{
+    margin: 0;
+}
+
+.certifications-item .btn{
+    margin-top: 10px;
+}
+
 /* FOOTER
 ------------------------------------*/
 footer {
