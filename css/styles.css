@@ -161,6 +161,9 @@ footer a:hover {
     height: auto;
     width: 300px;
 }
+.project-item .btn{
+    margin-bottom: 5px;
+}
 
 @media screen and (min-width: 860px) { 
     .project-item{
